@@ -4,6 +4,7 @@ namespace Brain\Engine;
 
 use function cli\line;
 use function cli\prompt;
+use function Utils\random;
 
 function run($mission, $data)
 {
@@ -15,7 +16,7 @@ function run($mission, $data)
 
     foreach ($data as [$question, $rightAnswer]) {
         # code...
-        $randNum = \Utils\random();
+        $randNum = random();
         line($question);
         $answer = prompt('Your answer: ');
         if ($answer !== $rightAnswer) {
