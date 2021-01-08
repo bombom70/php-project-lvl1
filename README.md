@@ -7,3 +7,8 @@ run:
     make even
 
 https://asciinema.org/a/IRsnvEtzUHJ8oPTfzLAx7ZT1M
+
+run:
+    make gcd
+
+https://asciinema.org/a/kLOvREzs6vDq2REjvJbSzAP1p
