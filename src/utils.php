@@ -2,7 +2,7 @@
 
 namespace Utils;
 
-function random()
+function random($min = 1, $max = 20)
 {
-    return rand(1, 20);
+    return rand($min, $max);
 }

@@ -2,8 +2,8 @@
 
 namespace Brain\Games\Gcd;
 
-use function Utils;
-use function Brain\Engine;
+use function Utils\random;
+use function Brain\Engine\run;
 
 function gcd($num1, $num2)
 {
@@ -23,11 +23,11 @@ function gcdGame()
     $step = 3;
     $data = [];
     for ($i = 0; $i < $step; $i++) {
-        $randNum1 = \Utils\random();
-        $randNum2 = \Utils\random();
+        $randNum1 = random();
+        $randNum2 = random();
         $question = "Question: {$randNum1} {$randNum2}";
         $rightAnswer = strval(gcd($randNum1, $randNum2));
         $data[] = [$question, $rightAnswer];
     }
-    \Brain\Engine\run($mission, $data);
+    run($mission, $data);
 }
