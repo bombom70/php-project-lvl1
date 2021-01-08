@@ -10,7 +10,7 @@ function isEven(int $num): bool
     return $num % 2 === 0;
 }
 
-function evenGame()
+function evenGame(): mixed
 {
     $mission = "Answer 'yes' if the number is even, otherwise answer 'no'.";
     $step = 3;
