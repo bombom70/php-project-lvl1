@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function Utils\random;
 
-function run(string $mission, array $data): none
+function run(string $mission, array $data)
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
