@@ -8,7 +8,7 @@ use function Brain\Engine\run;
 function isPrime($num)
 {
     if ($num < 2) {
-        return false; 
+        return false;
     }
     for ($i = 2; $i <= $num / 2; $i++) {
         if ($num % $i === 0) {
