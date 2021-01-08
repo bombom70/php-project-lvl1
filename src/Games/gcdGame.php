@@ -17,7 +17,7 @@ function gcd(int $num1, int $num2): int
     return $val;
 }
 
-function gcdGame(): string
+function gcdGame(): none
 {
     $mission = "Find the greatest common divisor of given numbers.";
     $step = 3;
