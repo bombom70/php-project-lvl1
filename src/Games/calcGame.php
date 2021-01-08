@@ -2,8 +2,8 @@
 
 namespace Brain\Games\Calc;
 
-use function Utils;
-use function Brain\Engine;
+use function Utils\random;
+use function Brain\Engine\run;
 
 function calcGame()
 {
@@ -11,10 +11,10 @@ function calcGame()
     $step = 3;
     $data = [];
     for ($i = 0; $i < $step; $i++) {
-        $randNum1 = \Utils\random();
-        $randNum2 = \Utils\random();
+        $randNum1 = random();
+        $randNum2 = random();
         $signs = ['+', '-', '*'];
-        $sign = $signs[rand(0, 2)];
+        $sign = $signs[random(0, 2)];
         $rightAnswer;
         $question = "Question: {$randNum1} {$sign} {$randNum2}";
         switch ($sign) {
@@ -30,5 +30,5 @@ function calcGame()
         }
         $data[] = [$question, strval($rightAnswer)];
     }
-    \Brain\Engine\run($mission, $data);
+    run($mission, $data);
 }
