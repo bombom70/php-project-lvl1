@@ -15,7 +15,6 @@ function run(string $mission, array $data)
     $step = 3;
 
     foreach ($data as [$question, $rightAnswer]) {
-        # code...
         $randNum = random();
         line($question);
         $answer = prompt('Your answer: ');

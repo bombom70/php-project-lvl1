@@ -5,7 +5,7 @@ namespace Brain\Games\Even;
 use function Utils\random;
 use function Brain\Engine\run;
 
-function isEven(int $num): boolval
+function isEven(int $num): bool
 {
     return $num % 2 === 0;
 }

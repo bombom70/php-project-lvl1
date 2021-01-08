@@ -15,7 +15,6 @@ function calcGame()
         $randNum2 = random();
         $signs = ['+', '-', '*'];
         $sign = $signs[random(0, 2)];
-        $rightAnswer = 0;
         $question = "Question: {$randNum1} {$sign} {$randNum2}";
         switch ($sign) {
             case "+":
