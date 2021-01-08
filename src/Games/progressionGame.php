@@ -18,7 +18,7 @@ function generateProgression(): array
     return $progression;
 }
 
-function progressionGame(): mixed
+function progressionGame(): void
 {
     $mission = "What number is missing in the progression?";
     $step = 3;

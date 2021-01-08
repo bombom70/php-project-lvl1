@@ -5,7 +5,7 @@ namespace Brain\Games\Calc;
 use function Utils\random;
 use function Brain\Engine\run;
 
-function calcGame(): mixed
+function calcGame(): void
 {
     $mission = "What is the result of the expression?";
     $step = 3;

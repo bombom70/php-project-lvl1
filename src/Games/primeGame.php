@@ -18,7 +18,7 @@ function isPrime(int $num): bool
     return true;
 }
 
-function primeGame(): mixed
+function primeGame(): void
 {
     $mission = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
     $step = 3;
