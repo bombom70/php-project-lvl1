@@ -5,7 +5,7 @@ namespace Brain\Games\Prime;
 use function Utils\random;
 use function Brain\Engine\run;
 
-function isPrime(int $num): boolval
+function isPrime(int $num): bool
 {
     if ($num < 2) {
         return false;
