@@ -5,7 +5,7 @@ namespace Brain\Games\Gcd;
 use function Utils\random;
 use function Brain\Engine\run;
 
-function gcd($num1, $num2)
+function gcd(int $num1, int $num2): int
 {
     $val = 1;
 
@@ -17,7 +17,7 @@ function gcd($num1, $num2)
     return $val;
 }
 
-function gcdGame()
+function gcdGame(): string
 {
     $mission = "Find the greatest common divisor of given numbers.";
     $step = 3;

@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function Utils\random;
 
-function run($mission, $data)
+function run(string $mission, array $data): string
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -22,7 +22,7 @@ function run($mission, $data)
         if ($answer !== $rightAnswer) {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
             line("Let's try again, {$name}!");
-            return;
+            break;
         }
         line('Correct!');
     }

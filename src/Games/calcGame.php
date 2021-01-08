@@ -5,7 +5,7 @@ namespace Brain\Games\Calc;
 use function Utils\random;
 use function Brain\Engine\run;
 
-function calcGame()
+function calcGame(): string
 {
     $mission = "What is the result of the expression?";
     $step = 3;
@@ -15,7 +15,7 @@ function calcGame()
         $randNum2 = random();
         $signs = ['+', '-', '*'];
         $sign = $signs[random(0, 2)];
-        $rightAnswer;
+        $rightAnswer = 0;
         $question = "Question: {$randNum1} {$sign} {$randNum2}";
         switch ($sign) {
             case "+":

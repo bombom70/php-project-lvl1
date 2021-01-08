@@ -5,7 +5,7 @@ namespace Brain\Games\Prime;
 use function Utils\random;
 use function Brain\Engine\run;
 
-function isPrime($num)
+function isPrime(int $num): boolval
 {
     if ($num < 2) {
         return false;
@@ -18,7 +18,7 @@ function isPrime($num)
     return true;
 }
 
-function primeGame()
+function primeGame(): string
 {
     $mission = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
     $step = 3;

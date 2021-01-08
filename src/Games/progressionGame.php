@@ -5,7 +5,7 @@ namespace Brain\Games\Progression;
 use function Utils\random;
 use function Brain\Engine\run;
 
-function generateProgression()
+function generateProgression(): array
 {
     $step = rand(1, 5);
     $progressionLength = 6;
@@ -18,7 +18,7 @@ function generateProgression()
     return $progression;
 }
 
-function progressionGame()
+function progressionGame(): string
 {
     $mission = "What number is missing in the progression?";
     $step = 3;

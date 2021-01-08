@@ -5,12 +5,12 @@ namespace Brain\Games\Even;
 use function Utils\random;
 use function Brain\Engine\run;
 
-function isEven($num)
+function isEven(int $num): boolval
 {
     return $num % 2 === 0;
 }
 
-function evenGame()
+function evenGame(): string
 {
     $mission = "Answer 'yes' if the number is even, otherwise answer 'no'.";
     $step = 3;
